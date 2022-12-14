@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Monk</title>
+    <style>
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            padding: 0px 20px;
+            height: 80px;
+        }
+        #nav img{
+            height:  auto;
+            /* width: 200px; */
+        }
+        #main {
+            /* border: 1px solid black; */
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  
+        }
+        #main a{
+            display: inline;
+            /* margin-right: 100px;  */
+            border: 0px; 
+            background-color: transparent; 
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+         } 
+        #main #anc{
+            width: 50%  ;
+            background-color: transparent; 
+            border-radius: 5px; 
+            outline: auto;  
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* banner css */
+        #banner{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0px 40px;
+            /* border: solid; */
+            background-color:rgb(238, 238, 238) ;
+        }
+        #banner .letter{
+            width: 45%;
+            /* border: solid; */
+            font-size: 30px;
+        }
+        #banner .pic{
+            width: 45%;
+            /* border: solid; */
+            
+        }
+        #banner .banbtn a{
+            border: solid black;
+            padding:  10px 40px;
+            font-size: 20px;
+            text-decoration: none;
+            border-width: 1px;
+            border-radius: 5px;
+            color: rgba(14, 12, 12, 0.828);
+            margin-right: 20px;
+            font-weight: bold;
+            background-color: white;
+        }
+        #banner .banbtn .anc{
+            border: transparent;
+            background-color: rgb(253, 216, 53);
+        }
+        #banner .banbtn .hov:hover{
+             background-color:rgb(238, 238, 238) ;
+        }
+
+
+        pages
+        .pages{
+            display: flex;
+            /* border: solid; */
+            align-items: center;
+            justify-content: center;
+        }
+        .pages .btn {
+            display: flex;
+        }
+        .pages .btn button{
+            background-color: transparent;
+            border: 0px;
+            font-size: large;
+            color: rgb(3, 169, 244);
+        }
+        .pages h2{
+            font-size: larger;
+        }
+       
+        .pages{
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="nav">
+        <img src="photos/images.png" alt="error">
+        <div id="main">
+           <a href="#">Log in</a>
+            <a id="anc" href="#">Get Started</a>
+        </div>
+    </nav>
+   
+    <!-- banner portion-->
+    <div id="banner">
+        <div class="letter">
+            <h1>Get answers with surveys</h1>
+            <p>Be the person with great ideas. Surveys give you actionable insights and fresh perspectives.</p>
+            <div class="banbtn">
+            <a class="anc" href="#">Go Premium</a>
+            <a class="hov" href="#">Sign up Free</a>
+            </div>
+        </div>
+        <div class="pic">
+            <img src="photos/images1.png" alt="error">
+        </div>
+    </div>
+
+    <!-- 5 pages -->
+    <div class="pages">
+        <h2>Go to:</h2>
+        <div class="btn">
+            
+        </div>
+    </div>
+</body>
+</html>
