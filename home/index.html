@@ -5,106 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>V Monk</title>
-    <style>
-        #nav{
-            display: flex;
-            justify-content: space-between;
-            /* border: 1px solid red; */
-            padding: 0px 20px;
-            height: 80px;
-        }
-        #nav img{
-            height:  auto;
-            /* width: 200px; */
-        }
-        #main {
-            /* border: 1px solid black; */
-            width: 15%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;  
-        }
-        #main a{
-            display: inline;
-            /* margin-right: 100px;  */
-            border: 0px; 
-            background-color: transparent; 
-            text-decoration: none;
-            font-size: 20px;
-            color: black;
-         } 
-        #main #anc{
-            width: 50%  ;
-            background-color: transparent; 
-            border-radius: 5px; 
-            outline: auto;  
-            text-align: center;
-            padding: 10px;
-        }
-
-        /* banner css */
-        #banner{
-            display: flex;
-            justify-content: space-evenly;
-            padding: 0px 40px;
-            /* border: solid; */
-            background-color:rgb(238, 238, 238) ;
-        }
-        #banner .letter{
-            width: 45%;
-            /* border: solid; */
-            font-size: 30px;
-        }
-        #banner .pic{
-            width: 45%;
-            /* border: solid; */
-            
-        }
-        #banner .banbtn a{
-            border: solid black;
-            padding:  10px 40px;
-            font-size: 20px;
-            text-decoration: none;
-            border-width: 1px;
-            border-radius: 5px;
-            color: rgba(14, 12, 12, 0.828);
-            margin-right: 20px;
-            font-weight: bold;
-            background-color: white;
-        }
-        #banner .banbtn .anc{
-            border: transparent;
-            background-color: rgb(253, 216, 53);
-        }
-        #banner .banbtn .hov:hover{
-             background-color:rgb(238, 238, 238) ;
-        }
-
-
-        pages
-        .pages{
-            display: flex;
-            /* border: solid; */
-            align-items: center;
-            justify-content: center;
-        }
-        .pages .btn {
-            display: flex;
-        }
-        .pages .btn button{
-            background-color: transparent;
-            border: 0px;
-            font-size: large;
-            color: rgb(3, 169, 244);
-        }
-        .pages h2{
-            font-size: larger;
-        }
-       
-        .pages{
-            
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <!-- navbar -->
@@ -135,8 +36,209 @@
     <div class="pages">
         <h2>Go to:</h2>
         <div class="btn">
-            
+            <a href="#Pricing">Pricing</a>
+            <a href="#Enterprise">Enterprise</a>
+            <a href="#How_it_works">How it works</a>
+            <a href="#Template">Template</a>
+            <a href="#Create_a_Survey">Create a Survey</a>
         </div>
     </div>
+
+    <section id="Pricing">
+        <h2>Choose from our most popular plans</h2>
+        <p>Get an individual plan with <span>features that fit your needs,</span>  or create a team instead!</p>
+        <div class="box">
+            <div class="main">
+                <div class="parent">
+                    <h2>Individual Advantage</h2>
+                </div>
+                <div class="child"><h1>₹ 1,250</h1></div>
+                <div id="word">
+                    <p>/ month</p>
+                    <p>Billed ₹15,000 annually</p>
+                    <button class="btn">Sign up</button>
+                    <p>Tools to help individuals create, send, and analyze surveys—in a snap.</p>
+                </div>
+            </div>
+
+            <div class="main2">
+                <div class="parent">
+                    <h2>Individual Advantage</h2>
+                </div>
+                <div class="child"><h1>₹ 1,250</h1></div>
+                <div id="word">
+                    <p class="para">/ month</p>
+                    <p>Billed ₹15,000 annually</p>
+                    <button class="btn">Sign up</button>
+                    <p>Tools to help individuals create, send, and analyze surveys—in a snap.</p>
+                </div>
+            </div>
+            
+            <div class="main3">
+                <div class="parent">
+                    <h2>Individual Advantage</h2>
+                </div>
+                <div class="child"><h1>₹ 1,250</h1></div>
+                <div id="word">
+                    <p class="para">/ month</p>
+                    <p>Billed ₹15,000 annually</p>
+                    <button class="btn">Sign up</button>
+                    <p>Tools to help individuals create, send, and analyze surveys—in a snap.</p>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="Enterprise">
+        <div class="main">
+            <h1>Need an enterprise-grade solution? </h1>
+            <p>SurveyMonkey Enterprise empowers organizations to gain insights from customers, </p>
+            <p>employees, and the market—securely and at scale.</p>
+            <div class="parent">
+                <div class="child">
+                    <h1>Contact us today</h1>
+                    <p>Learn more about SurveyMonkey Enterprise and schedule a demo.</p>
+                    <ul>
+                        <li>Manage multiple users and gain visibility into all survey data collected across your organization with admin controls and dashboards.</li>
+                        <li>Ensure confidential data is protected with enhanced security including encryption, SSO, and features that help you remain compliant with HIPAA and GDPR.</li>
+                        <li>Make feedback automated and actionable by connecting to key business systems using APIs and powerful integrations, including Salesforce, Marketo, Tableau, and more.</li>
+                    </ul>
+                </div>
+                <div class="child2">
+                    <form action="">
+                        <p>First Name</p>
+                        <input type="First Name" placeholder="first name" id="first">
+                        <p>Last name</p>
+                        <input type="text" placeholder="last name" id="last">
+                        <p>Business email</p>
+                        <input type="email" placeholder="email" id="email">
+                        <p>Job Title</p>
+                        <input type="text" placeholder="job title" id="job">
+                        <p>Company</p>
+                        <input type="text" placeholder="company" id="company">
+                        <p>phone Number</p>
+                        <input type="number" placeholder="phone number" id="no">
+                        <p>country</p>
+                        <input type="text" placeholder="country" id="country">
+                        <div class="check">
+                            <input type="checkbox" name="" id="">
+                            <div class="para">
+                            <p>I wish to receive other information about Momentive like product updates, news, information, and special promotions.</p>
+                            <p>Visit the Privacy Notice for information on how we use your information.</p>
+                            <p>You can unsubscribe anytime using a link at the bottom of our communications.</p>
+                            <p>By clicking 'Contact sales', I agree to use of my details to contact me about my specific request or inquiry.</p>
+                            </div>
+                        </div>
+                        <button>Contact Sales</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /* How_it_works potion */ -->
+
+    <section id="How_it_works">
+        <div id="main">
+            <div class="img">
+                <img src="photos/sem-videotest-wistia-v6.png" alt="">
+            </div>
+            <div class="letter">
+                <h1>
+                    Everything you need to create the best surveys
+                </h1>
+                <ul>
+                    <li>Get access to survey templates that speak to customers, employees, or your target audience.</li>
+                    <li>Choose from expert-written sample questions to include in your surveys.</li>
+                    <li>Score your surveys to estimate their success rates with SurveyMonkey Genius.</li>
+                    <li>Explore our best practices for creating the even the most sophisticated surveys.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="Template">
+        <h1>95% of the Fortune 500 rely on SurveyMonkey</h1>
+        <div class="pic">
+            <img src="photos/Allbirds-slate.png" alt="error">
+            <img src="photos/Tweezerman-slate.png" alt="error">
+            <img src="photos/Adobe-slate.png" alt="error">
+            <img src="photos/Verizon-slate.png" alt="error">
+            <img src="photos/sephora-logo.png" alt="error">
+        </div>
+
+        <div class="temp">
+            <h1>Get survey templates to help you get started</h1>
+            <div class="mastr">
+                <div class="child">
+                    <img src="photos/msgimages.jpeg" alt="error">
+                    <h2>Customer satisfaction</h2>
+                    <p>Get real-time feedback to improve products, services, and business overall.</p>
+                    <span>Learn more</span>
+                </div>
+
+                <div class="child">
+                    <img src="photos/msgimages.jpeg" alt="error">
+                    <h2>Customer satisfaction</h2>
+                    <p>Get real-time feedback to improve products, services, and business overall.</p>
+                    <span>Learn more</span>
+                </div>
+
+                <div class="child">
+                    <img src="photos/msgimages.jpeg" alt="error">
+                    <h2>Customer satisfaction</h2>
+                    <p>Get real-time feedback to improve products, services, and business overall.</p>
+                    <span>Learn more</span>
+                </div>
+            
+            </div>
+
+            <div class="parent">
+                <div class="child">
+                    <img src="photos/msgimages.jpeg" alt="error">
+                    <h2>Customer satisfaction</h2>
+                    <p>Get real-time feedback to improve products, services, and business overall.</p>
+                    <span>Learn more</span>
+                </div>
+
+                <div class="child">
+                    <img src="photos/msgimages.jpeg" alt="error">
+                    <h2>Customer satisfaction</h2>
+                    <p>Get real-time feedback to improve products, services, and business overall.</p>
+                    <span>Learn more</span>
+                </div>
+
+                <div class="child">
+                    <img src="photos/msgimages.jpeg" alt="error">
+                    <h2>Customer satisfaction</h2>
+                    <p>Get real-time feedback to improve products, services, and business overall.</p>
+                    <span>Learn more</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create_a_Survey portion -->
+
+    <section id="Create_a_Survey">
+        <div class="img">
+        <img src="photos/midnight-plug.png" alt="error">
+        </div>
+
+        <div class="word">
+            <h1>Reach anyone, anywhere</h1>
+            <p>Connect with people via email, your website, social media, and more. With our expert, pre-written templates, you can create surveys, polls, or quizzes in minutes!</p>
+            <button>Sign up Free</button>
+        </div>
+    </section>
+
+   
 </body>
+
+<!-- <script>
+    document.querySelectorAll("a[herf="#"]")
+</script> -->
 </html>

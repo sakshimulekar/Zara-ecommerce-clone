@@ -1,0 +1,420 @@
+
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            padding: 0px 20px;
+            height: 80px;
+            background-color: transparent;
+        }
+        #nav img{
+            height:  auto;
+            /* width: 200px; */
+        }
+        #main {
+            /* border: 1px solid black; */
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  
+        }
+        #main a{
+            display: inline;
+            /* margin-right: 100px;  */
+            border: 0px; 
+            background-color: transparent; 
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+         } 
+        #main #anc{
+            width: 50%  ;
+            background-color: transparent; 
+            border-radius: 5px; 
+            outline: auto;  
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* banner css */
+        #banner{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 0px 40px;
+            /* border: solid; */
+            background-color:rgb(238, 238, 238) ;
+        }
+        #banner .letter{
+            width: 45%;
+            /* border: solid; */
+            font-size: 30px;
+        }
+        #banner .pic{
+            width: 45%;
+            /* border: solid; */
+            
+        }
+        #banner .banbtn a{
+            border: solid black;
+            padding:  10px 40px;
+            font-size: 20px;
+            text-decoration: none;
+            border-width: 1px;
+            border-radius: 5px;
+            color: rgba(14, 12, 12, 0.828);
+            margin-right: 20px;
+            font-weight: bold;
+            background-color: white;
+        }
+        #banner .banbtn .anc{
+            border: transparent;
+            background-color: rgb(253, 216, 53);
+        }
+        #banner .banbtn .hov:hover{
+             background-color:rgb(238, 238, 238) ;
+        }
+
+
+        /* pages */
+
+        .pages{
+            display: flex;
+            /* border: solid; */
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+        .pages .btn {
+            display: flex;
+            justify-content: space-evenly;
+            /* width: 40%; */
+            /* border: solid; */
+        }
+        .pages .btn a{
+            background-color: transparent;
+            border-right: 2px solid black;
+            font-size: 25px;
+            color: rgb(3, 169, 244);
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+        .pages h2{
+            font-size: 25px;
+        }
+       
+        .pages{
+            
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        #Pricing{
+            /* border: solid; */
+            text-align: center;
+            padding-bottom: 50px;
+            margin-top: 50px;
+        }
+        #Pricing > h2{
+            font-size: 40px;
+        }
+        #Pricing > p{
+            font-size: 25px;
+            margin-bottom: 100px;
+        }
+        #Pricing > p >span{
+            color:rgb(30, 136, 229);
+        }
+        #Pricing .box .main{
+            /* border: solid; */
+            margin: auto;
+            height: 500px; 
+            width: 400px;
+            overflow: hidden; 
+            background-color:rgb(47, 183, 108);
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #Pricing .box{
+            display: flex;
+            /* border: solid; */
+            width: 75%;
+            margin: auto;
+            overflow: hidden;
+            margin-bottom: 100px;
+        }
+        #Pricing .box .parent{
+            /* border: solid; */
+            margin: auto; 
+            height: 70px;
+            width: 400px;
+            overflow: hidden;
+            color: white;
+        }
+        #Pricing .box .child{
+            /* border: solid green ;  */
+            width: 400px;
+            margin: auto;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%; 
+            height: 80px; 
+            background-color: white; 
+            padding-top: 10px;
+            font-size: 30px;
+        }
+        #Pricing .box > .main >#word{
+            background-color: white;
+            font-size: 20px;
+            padding: 10px 40px;
+            height: 400px;
+        } 
+        #Pricing .box > .main >#word p{
+            padding-top: 20px;
+            text-align: center;
+        }
+        #Pricing .box .main > #word .btn{
+            background-color:rgb(47, 183, 108);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        #Pricing .box .main2{
+            background-color: rgb(32, 43, 113);
+            margin: auto;
+            height: 500px; 
+            width: 400px;
+            overflow: hidden; 
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 10px;
+        }
+        #Pricing .box > .main2 >#word{
+            background-color: white;
+            font-size: 20px;
+            padding: 10px 40px;
+            height: 400px;  
+        } 
+        #Pricing .box > .main2 >#word p{
+            padding-top: 20px;
+            text-align: center;
+        }
+        #Pricing .box .main2 > #word .btn{
+            background-color: rgb(32, 43, 113);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        #Pricing .box .main3{
+            background-color: rgb(81, 14, 81);
+            margin: auto;
+            height: 500px; 
+            width: 400px;
+            overflow: hidden; 
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 10px;
+        }
+        #Pricing .box > .main3 >#word{
+            background-color: white;
+            font-size: 20px;
+            padding: 10px 40px;
+            height: 400px;
+        } 
+        #Pricing .box > .main3 >#word p{
+            padding-top: 20px;
+            text-align: center;
+        }
+        #Pricing .box .main3 > #word .btn{
+            background-color: rgb(81, 14, 81);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        #Template{
+            width: 80%;
+            /* border: solid; */
+            margin: auto;
+            text-align: center;
+            font-weight: bold;
+        }
+        #Template h1{
+            font-size: 35px;
+            margin-bottom: 70px;
+        }
+        #Template > .pic{
+            width: 90%;
+            /* border: solid; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            padding: 30px;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+        template > .temp{
+            border: solid;
+           
+        }
+        #Template > .temp .mastr{
+            display: flex;
+            /* border: solid; */
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+        }
+        #Template > .temp .mastr > .child{
+            /* border: green solid; */
+            padding: 30px;
+        ;
+        }
+        #Template > .temp .mastr > .child img{
+            width: 100px;
+        }
+        #Template > .temp .mastr > .child p{
+            font-size: 18px;
+        }
+        #Template > .temp .mastr > .child span{
+            color:rgb(3, 169, 244); 
+            font-size: 20px;
+        }
+        #Template > .temp .parent{
+            display: flex;
+            /* border: solid; */
+            width: 80%;
+            margin: auto;
+        }
+        #Template > .temp .parent > .child{
+            /* border: green solid; */
+            padding: 30px;
+        ;
+        }
+        #Template > .temp .parent > .child img{
+            width: 100px;
+        }
+        #Template > .temp .parent > .child p{
+            font-size: 18px;
+        }
+        #Template > .temp .parent > .child span{
+            color:rgb(3, 169, 244); 
+            font-size: 20px;
+        }
+
+        #Create_a_Survey{
+            display: flex;
+            margin-top: 80px;
+        }
+        #Create_a_Survey > .img{
+            width: 45%;
+            /* border: solid; */
+            background-color: #1E3A8A;
+            padding-top: 60px;
+            padding-left: 150px;
+        }
+        #Create_a_Survey .word{
+            /* border: solid; */
+            padding: 100px;
+            background-color: #93C5FD;
+        }
+        #Create_a_Survey .word h1{
+            font-size: 50px;
+            /* margin-top: 200px; */
+        }
+        #Create_a_Survey .word p{
+            font-size: 25px;
+        }
+        #Create_a_Survey .word button{
+            padding: 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* How_it_works potion */
+
+        #How_it_works{
+            display: flex;
+            /* border: solid; */
+        }
+        #How_it_works #main .img{
+            width: 65%;
+            /* border: solid ; */
+        }
+        #How_it_works #main .letter{
+            width: 40%;
+            /* border: solid red; */
+            padding: 110px;
+        }
+        #How_it_works #main{
+            width: 90%;
+            /* border: solid; */
+            margin: auto;
+        }
+        #How_it_works #main .img img{
+            width: 100%;
+        }
+        #How_it_works #main .letter h1{
+            font-size: 50px;
+            padding-bottom: 30px;
+        }
+        #How_it_works #main .letter ul li{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+       
+        /* Enterprise portion */
+        #Enterprise{
+            width: 100%;
+            border: solid;
+        }
+        #Enterprise .main >h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        #Enterprise .main > p{
+            font-size: 20px;
+            text-align: center;
+        }
+        #Enterprise .parent{
+            width: 90% ;
+            border: solid green;
+            display: flex;
+            margin: auto;
+        }
+        #Enterprise .parent > .child{
+            width: 40%;
+            border: solid red;
+            padding: 50px;
+            text-align: left;
+        }
+        #Enterprise .parent > .child > h1{
+            font-size: 50px;
+            margin-top: 50px;            
+        }
+        #Enterprise .parent > .child > p, ul li{
+            font-size: 22px;
+            margin-bottom: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #Enterprise .parent > .child2 {
+            border: solid purple;
+            padding: 50px;
+            font-size: 20px;
+        }
+        #Enterprise .parent > .child2 > form > input{
+            padding: 10px;
+            width: 90%;
+        }
+        #Enterprise .parent > .child2 > form .check{
+            display: flex;
+        }
+        #Enterprise .parent > .child2 > form .check > input{
+            border: solid green;
+        }
+
