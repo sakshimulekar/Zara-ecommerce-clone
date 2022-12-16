@@ -1,11 +1,19 @@
-
+        *{
+            /* margin: 0px;
+            padding: 0px; */
+        }
         #nav{
             display: flex;
             justify-content: space-between;
             /* border: 1px solid red; */
-            padding: 0px 20px;
+            width: 100%;
+            padding: 0px 30px;
             height: 80px;
             background-color: transparent;
+            position: fixed;
+            top: 0;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
         #nav img{
             height:  auto;
@@ -13,7 +21,7 @@
         }
         #main {
             /* border: 1px solid black; */
-            width: 15%;
+            width: 25%;
             display: flex;
             justify-content: space-between;
             align-items: center;  
@@ -34,25 +42,34 @@
             outline: auto;  
             text-align: center;
             padding: 10px;
+            margin-right: 50px;
         }
 
         /* banner css */
         #banner{
+            margin-top: 50px;
             display: flex;
             justify-content: space-evenly;
             padding: 0px 40px;
             /* border: solid; */
             background-color:rgb(238, 238, 238) ;
+            height: 700px;
         }
         #banner .letter{
             width: 45%;
             /* border: solid; */
             font-size: 30px;
+            margin-top: 50px;
         }
         #banner .pic{
-            width: 45%;
+            width: 55%;
             /* border: solid; */
-            
+            height: auto;
+        }
+        #banner .pic > img{
+            margin-top: 0%;
+            height: 700px;
+            width: 100%;
         }
         #banner .banbtn a{
             border: solid black;
@@ -332,8 +349,10 @@
         }
         #Create_a_Survey .word button{
             padding: 20px;
-            font-size: 15px;
+            font-size: 18px;
             font-weight: bold;
+            background-color: white;
+            color: black;
         }
 
         /* How_it_works potion */
@@ -371,7 +390,7 @@
         /* Enterprise portion */
         #Enterprise{
             width: 100%;
-            border: solid;
+            /* border: solid; */
         }
         #Enterprise .main >h1{
             font-size: 50px;
@@ -383,13 +402,13 @@
         }
         #Enterprise .parent{
             width: 90% ;
-            border: solid green;
+            /* border: solid green; */
             display: flex;
             margin: auto;
         }
         #Enterprise .parent > .child{
             width: 40%;
-            border: solid red;
+            /* border: solid red; */
             padding: 50px;
             text-align: left;
         }
@@ -403,7 +422,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         #Enterprise .parent > .child2 {
-            border: solid purple;
+            /* border: solid purple; */
             padding: 50px;
             font-size: 20px;
         }
@@ -414,7 +433,101 @@
         #Enterprise .parent > .child2 > form .check{
             display: flex;
         }
-        #Enterprise .parent > .child2 > form .check > input{
-            border: solid green;
+        #Enterprise .parent > .child2 > form .check > .checkbox{
+            width: 5%;
+            padding-top: 20px;
+            /* border: solid green; */
         }
+        button{
+            background-color:rgb(47, 183, 108);
+            color: white;
+            padding: 10px;
+            /* width: 20%; */
+            font-size: large;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        #last_div{
+            height: 400px;
+            /* border: solid green; */
+            text-align: center;
+            font-size: 30px;
+            padding-top: 100px;
+        }
+        
+    .footer {
+        color: rgb(63, 61, 61);
+        margin-bottom: 100px;
+        font-weight: 100px;
+    }
+    .footer:hover{
+        cursor: pointer;
+        color: black;
+    }
+    .first, .sec, .third, .forth{
+        display: flex;
+        width: 100%;
+        /* border: solid green; */
+        font-size: 20px;
+    }
 
+    .first > ul, .sec > ul, .third > ul, .forth > ul{
+        width: 15%;
+        /* border: solid red; */
+        /* font-size: 50px; */
+        text-align: left;
+    }
+    .first > div, .sec > div{
+        display: flex;  
+    }
+    .first > div > li, .sec > div > li,.fist > li{
+        /* border: solid black; */
+        margin-top: 20px;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+    .list .fist, .list .sediv, .fdiv, .fidiv, .sidiv, .sediv{
+        display: flex;
+        /*  */
+        /* padding-right: 10px; */
+        font-size: 20px;
+    }
+    .sediv > li, .thidiv > li, .fdiv > li, .fidiv > li, .sidiv > li, .sediv > li{
+        font-size: 20px;
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+    .fdiv, .sidiv{
+        margin-top: 30px;
+    }
+    .forth{
+        margin-top: 20px;
+    }
+    #footer2 {
+        margin-bottom: 100px;
+        /* border: solid red; */
+    }
+    #footer2 > .card{
+        display: flex;
+        width: 90%;
+        /* border: solid green; */
+        margin: auto;
+        justify-content: space-between;
+    }
+    #left p{
+        font-size: 20px;
+        margin: 0;
+    }
+    #select{
+        margin: 30px 0;
+        font-size: 20px;
+        padding: 10px;
+        color: white;
+        background-color: black;
+    }
+    .right{
+        display: flex;
+        /* border: solid orange; */
+        align-items: end;
+    }
