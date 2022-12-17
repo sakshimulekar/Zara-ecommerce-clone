@@ -53,7 +53,7 @@
             padding: 0px 40px;
             /* border: solid; */
             background-color:rgb(238, 238, 238) ;
-            height: 700px;
+            height: 650px;
         }
         #banner .letter{
             width: 45%;
@@ -68,7 +68,7 @@
         }
         #banner .pic > img{
             margin-top: 0%;
-            height: 700px;
+            height: 650px;
             width: 100%;
         }
         #banner .banbtn a{
