@@ -96,7 +96,7 @@
             <div class="lg">
                 <h1>Create an Account</h1>
                 <p>Email address</p>
-                <input type="email" placeholder="entr email address">
+                <input id="sign" type="email" placeholder="entr email address">
 
                 <div class="checkb">
                     <input type="checkbox">
@@ -108,7 +108,7 @@
                     <p>You agree to receive product news and special promotions via email. You can opt-out of these emails in your My Account page anytime.</p>
                 </div>
 
-                <a href="../HTML/password.html"><button>Next</button></a>
+                <a href="../HTML/password.html"><button id="btn">Next</button></a>
                 <p>Or Sign up with</p>
                 <input type="email" placeholder="email">
             </div>
@@ -122,4 +122,22 @@
         </div>
     </div>
 </body>
+<script>
+    
+    let data = JSON.parse(localStorage.getItem("sign_entered"))||[];
+    let sign = document.getElementById("sign");
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", ()=>{
+        alert("added");
+        let obj = {
+        signid: sign.value
+        }
+        console.log(obj);
+        // let userdata = email.innerText
+        data.push(obj)
+        localStorage.setItem("sign_entered",JSON.stringify(data));
+        console.log(data)
+    })
+
+</script>
 </html>

@@ -20,9 +20,9 @@
             <div class="lg">
                 <h1>Log in</h1>
                 <p>Email address <span>NEW! </span> </p>
-                <input type="email">
+                <input id="email" type="email">
                 <p>Forgot email?</p>
-                <a href="../HTML/password.html"><button>Next</button></a>
+                <a href="../HTML/password.html"><button id="btn">Next</button></a>
                 <p>Or log in with</p>
                 <input type="email">
             </div>
@@ -44,4 +44,22 @@
     </div>
     
 </body>
+<script>
+    let data = JSON.parse(localStorage.getItem("sign_entered"))||[];
+    let logdata = JSON.parse(localStorage.getItem("email_entered"))||[];
+    let email = document.getElementById("email");
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", ()=>{
+        alert("added");
+        let obj = {
+        emailid: email.value
+        }
+        console.log(obj);
+        // let userdata = email.innerText
+        
+        logdata.push(obj)
+        localStorage.setItem("email_entered",JSON.stringify(logdata));
+        console.log(data)
+    })
+</script>
 </html>
