@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens</title>
+    <style>
+  #productpage{
+             padding: 10px;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            width: 90%;
+        margin: auto;
+        display: grid;
+        gap: 20px;
+        padding: 10px 0px 0px 0px;
+       
+        }
+       
+
+    
+      img{
+        width: 100%;
+        
+      
+      }
+      h1{
+        font-size: 15px;
+      }
+      #topnav{
+       padding-right: 150px;
+        
+
+       } 
+#topnav img{
+    width: 200px;
+
+}
+    #help{
+        padding-right: 50px;
+    }
+
+        body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+        
+        nav{
+            
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav > div{
+            display: flex;
+            width: 600px;
+            justify-content: space-between;
+            font-size:15px;
+        }
+        nav > img{
+            width: 200px;
+        }
+      #place{
+        width: 80%;
+      
+        margin: auto;
+      }
+      input[type="text"]{
+        border: none;
+            border-bottom: 1px solid rgb(14, 1, 1);
+            outline: none;
+            height:15px;
+      }
+      nav > div{
+        display: flex;
+       
+      }
+     nav > div>div{
+        
+        display: flex;
+        width: 100%;
+          
+            justify-content: space-between;
+            font-size:15px;
+            
+     }
+     nav > div>div>div{
+        display: flex;
+        margin:end;
+        width: 200px;
+        justify-content: space-between;
+     }
+     #view_all{
+        display: flex;
+        width: 50%;
+        margin: auto;
+        justify-content: space-between;
+
+     }
+    
+     * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#fil{
+  border:2px solid green;
+align-items:center;
+margin-top: 150px;
+
+}
+nav{
+  background: transparent;
+            position: fixed;
+}
+#in{
+  background-color:transparent;
+}
+#social_media{
+display: flex;
+justify-content: space-between;
+width: 70%;
+}
+#policies{
+
+  display: flex;
+  gap: 20px;
+  padding: 50px;
+}
+#social_media{
+  padding: 50px;
+}
+#letter{
+  padding: 50px;
+}
+
+#cartitem{
+  text-decoration: none;
+}
+#policies{
+  background-color: #c5c5c5;
+}
+#social_media{}
+#imm{
+  width: 40px;
+  background-color: transparent;
+}
+
+    
+    </style>
+</head>
+<body>
+    
+    
+      
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">MENS</a>
+    <a href="#">WOMENS</a>
+    <a href="#">KIDS</a>
+    
+  </div>
+  
+  
+<nav>
+      <div id="topnav">
+        <span  style="font-size:30px;cursor:pointer " onclick="openNav()">&#9776; </span>
+        <img src="https://1000logos.net/wp-content/uploads/2022/08/Zara-log%D0%BE-768x432.png" alt="">
+        
+      </div>
+    
+    <div>
+        <div>
+            <input id="in" type="text" placeholder="SEARCH ">
+            <p><a  id="cartitem" href="cart.html"><img  id="imm"  src="https://www.bing.com/th?id=OIP.drKtjFRGPmA_Ym3W-ERRjwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2" alt=""></a></p>
+            <div id="help">
+               
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+     
+   
+    <select  id="fil">
+        <option value="">FILTER</option>
+        <option value="">TYPE OF PRODUCT</option>
+         <option value="">SIZE</option>
+        <option value="">PRICE</option>
+        
+    </select>
+
+
+<div id="productpage"></div>
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-man-edition/subhome-xmedia-w47//w/1920/IMAGE-landscape-fill-88c5ba6c-832e-442e-878f-48b60c0c8aa7-default_0.jpg?ts=1669457412950" style="width:100%">
+      <div class="text">MEN</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-50//w/1920/IMAGE-landscape-default-fill-6202be10-89aa-47bf-8d67-bca271b72adb-default_0.jpg?ts=1671035826261" style="width:100%">
+      <div class="text">WOMEN</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-kids-babyboy/subhome-xmedia-50//w/1920/IMAGE-landscape-fill-ff966491-7491-4c06-994e-ca71500b4c49-default_0.jpg?ts=1670935725138" style="width:100%">
+      <div class="text">KIDS</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div id="productpage">
+
+
+  </div>
+</nav>
+<div id="productpage"></div>
+
+<!-- for footer part  -->
+ <div id="letter">
+      <h1>SIGN UP FOR OUR NEWSLETTER
+     </h1>
+      <input type="text" placeholder=" ENTER YOUR EMAIL HERE">
+</div>
+
+
+<div id="social_media">
+  <p>TIKTOK</p>
+  <p>INSTAGRAM </p>
+  <p> FACEBOOK</p>
+  <p>TWITTER</p>
+  <p>PINTEREST</p>
+  <p>YOUTUBE</p>
+  <p>SPOTIFY</p>
+</div>
+
+
+<div id="policies">
+  <div>
+  <h2>HELP</h2>
+  <p>SHOP AT ZARA.COM</p>
+  <p>PRODUCT</p>
+  <p>PAYMENT</p>
+  <p>SHIPPING</p>
+  <p>EXCHANGES AND RETURNS</p>
+  <p>CLOTHING COLLECTION</p>
+  <p>PROGRAM</p>
+  <p>MY ACCOUNT</p>
+  
+  </div>
+  <div>
+    <h2>FOLLOW US</h2>
+    <p>NEWSLETTER</p>
+    <p>TIKTOK</p>
+    <p>INSTAGRAM</p>
+    <p>FACEBOOK</p>
+    <p>TWITTER</p>
+    <p>PINTEREST</p>
+    <p>YOUTUBE</p>
+  </div>
+  <div>
+    <h2>COMPANY</h2>
+    <p>ABOUT US</p>
+    <p>JOIN LIFE</p>
+    <p>OFFICES</p>
+    <p>STORES</p>
+  </div>
+  <div>
+    <h2>POLICIES</h2>
+    <p1>PRIVACY POLICY</p1>
+    <p1>PURCHASE CONDITIONS</p1>
+  </div>
+</div>
+  
+</body>
+<script>
+
+// fiter part
+let filterSelect = document.getElementById("fil");
+
+
+let fetchedData = [];
+
+filterSelect.addEventListener("change",() =>{
+  let filtered = fetchedData.filter((element) =>{
+    if(element.category === filterSelect.value){
+      return true;
+    }else{
+      return false;
+    }
+  })
+  mens(filtered);
+  
+})
+
+
+    let database = [
+    {
+      id: 1,
+      
+     img: "https://static.zara.net/photos///2023/V/0/2/p/0761/452/420/2/w/439/0761452420_2_1_1.jpg?ts=1671008648172",
+     price: "1650",
+      title:"HOODED SWEATSHIRT"
+      
+    },
+    {
+      id: 2,
+    img: "https://static.zara.net/photos///2023/V/0/2/p/0761/452/818/2/w/439/0761452818_2_1_1.jpg?ts=1671008653718",
+     price: "2340",
+      title:"HOODED SWEATSHIRT"
+    },
+    {
+     
+        id: 3,
+    img: "https://static.zara.net/photos///2022/I/0/1/p/0761/300/707/2/w/445/0761300707_2_1_1.jpg?ts=1663834369394",
+    price: "4230",
+    title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+      id: 4,
+      img: "https://static.zara.net/photos///2023/V/0/2/p/0962/401/800/2/w/445/0962401800_2_1_1.jpg?ts=1671118476135",
+      price: "5213",
+      title:"TEXT PRINT SWEATSHIRT"
+    },
+    {
+        id: 5,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/0526/302/803/2/w/324/0526302803_2_1_1.jpg?ts=1662110980844",
+      price: "4230",
+      title:"ZIP POLO SWEATSHIRT"
+    },
+    {
+        id: 6,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/4087/367/800/2/w/324/4087367800_2_1_1.jpg?ts=1666349707713",
+      price: "5012",
+      title:"COMBINATION SWEATSHIRT WITH TEXT"
+    },
+    {
+        id: 7,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2888/520/703/2/w/273/2888520703_1_1_1.jpg?ts=1668766999997",
+      price: "4999",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 8,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/4087/366/800/2/w/324/4087366800_2_1_1.jpg?ts=1666349710366",
+      price: "5410",
+      title:"ABSTRACT PRINT SWEATSHIRT"
+    },
+    {
+        id: 9,
+      img: "https://static.zara.net/photos///2022/I/0/1/p/0761/300/802/2/w/273/0761300802_2_4_1.jpg?ts=1663834512752",
+      price: "5023",
+      title:"HOODED SWEATSHIRT"
+    },
+    {
+        id: 10,
+      img: "https://static.zara.net/photos///2022/I/0/1/p/0761/300/800/2/w/273/0761300800_2_1_1.jpg?ts=1663834449543",
+      price: "3216",
+      title:"HOODED SWEATSHIRT"
+    },
+    {
+        id: 11,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2966/403/800/2/w/273/2966403800_2_1_1.jpg?ts=1668767731854",
+      price: "2560",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 12,
+      img: "https://static.zara.net/photos///2022/I/0/1/p/0761/300/707/2/w/273/0761300707_2_1_1.jpg?ts=1663834369394",
+      price: "2500",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 13,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2966/403/800/2/w/273/2966403800_2_1_1.jpg?ts=1668767731854",
+      price: "3506",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 14,
+      img: "https://static.zara.net/photos///2023/V/0/2/p/3443/401/251/2/w/273/3443401251_2_1_1.jpg?ts=1669972674035",
+      price: "3500",
+      title:"EMBROIDERED SWEATSHIRT"
+    },
+    {
+        id: 15,
+      img: "https://static.zara.net/photos///2023/V/0/2/p/3443/401/251/2/w/273/3443401251_2_1_1.jpg?ts=1669972674035",
+      price: "1500",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 16,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2966/403/800/2/w/273/2966403800_2_1_1.jpg?ts=1668767731854",
+      price: "2300",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 17,
+      img: "https://static.zara.net/photos///2023/V/0/2/p/5372/400/707/2/w/273/5372400707_2_5_1.jpg?ts=1669972733165",
+      price: "6500",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 18,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2966/403/800/2/w/273/2966403800_2_1_1.jpg?ts=1668767731854",
+      price: "2300",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 19,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/0962/333/251/2/w/273/0962333251_2_4_1.jpg?ts=1660659164367",
+      price: "4500",
+      title:"COMBINATION PATCH SWEATSHIRT"
+    },
+    {
+        id: 20,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/0962/322/526/2/w/273/0962322526_2_1_1.jpg?ts=1662713249252",
+      price: "3500",
+      title:"TEXT PRINT SWEATSHIRT"
+    },
+    {
+        id: 21,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2966/403/800/2/w/273/2966403800_2_1_1.jpg?ts=1668767731854",
+      price: "2550",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 22,
+      img: "https://static.zara.net/photos///2023/V/0/2/p/4087/411/529/2/w/273/4087411529_2_4_1.jpg?ts=1669972722975",
+      price: "2320",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 23,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/1165/388/800/2/w/273/1165388800_2_1_1.jpg?ts=1668591721134",
+      price: "2500",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 24,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2966/403/800/2/w/273/2966403800_2_1_1.jpg?ts=1668767731854",
+      price: "1234",
+      title:"CONTRAST PRINT SWEATSHIRT"
+    },
+    {
+        id: 25,
+      img: "https://static.zara.net/photos///2023/V/0/2/p/0962/401/800/2/w/273/0962401800_2_1_1.jpg?ts=1671118476135",
+      price: "5223",
+      title:"TEXT PRINT SWEATSHIRT"
+    },
+    {
+        id: 26,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2966/403/800/2/w/273/2966403800_2_1_1.jpg?ts=1668767731854",
+      price: "4023",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 27,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2888/520/703/2/w/273/2888520703_1_1_1.jpg?ts=1668766999997",
+      price: "2135",
+      title:"ZIP COLLAR SWEATSHIRT"
+    },
+    {
+        id: 29,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/2966/403/800/2/w/273/2966403800_2_1_1.jpg?ts=1668767731854",
+      price: "5622",
+      title:"TEXT PRINT SWEATSHIRT"
+    },
+    {
+        id: 30,
+      img: "https://static.zara.net/photos///2022/I/0/2/p/0962/344/712/2/w/273/0962344712_2_5_1.jpg?ts=1663235009782",
+      price: "5500",
+      title:"PRINTED HOODIE"
+    },
+  ];
+  
+
+// getting div
+let productpage=document.getElementById("productpage"); 
+function mens(data)
+{
+    data.forEach(element => {
+    let card=document.createElement("div")
+    
+    let image=document.createElement("img");
+    image.setAttribute("src",element.img)
+
+   let title=document.createElement("h1")
+   title.innerText=element.title;
+   
+   let price=document.createElement("p")
+   price.innerText=element.price;
+    
+   let add=document.createElement("button")
+   add.innerText="Add To Cart"
+   
+     
+
+   add.addEventListener("click",() =>{
+            let cartData = JSON.parse(localStorage.getItem("cart"));
+
+            if(cartData === null) cartData = [];
+
+            let isAdleadyInCart = false;
+            for(let i=0;i<cartData.length;i++){
+              if(cartData[i].id === element.id){
+                isAdleadyInCart = true;
+                break;
+              };
+            }
+
+            if(isAdleadyInCart === true){
+              alert("Product Already in Cart");
+            }else{
+            cartData.push({...element,quantity:1});
+            localStorage.setItem("cart",JSON.stringify(cartData));
+            alert("Product Added To Cart");
+            }
+          })
+
+    card.append(image,title,price,add,add)
+    productpage.append(card)
+});
+}
+
+mens(database);
+
+</script>
+</html>

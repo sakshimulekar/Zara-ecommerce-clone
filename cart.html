@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <style>
+      /* Write all necessery css here  */
+      #topnav img{
+    width: 200px;
+
+         }
+      nav{
+             background: transparent;
+            position: fixed;
+         }
+
+
+         nav{
+            
+            width: 100%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        nav > div{
+            display: flex;
+            width: 600px;
+            justify-content: space-between;
+            font-size:15px;
+        }
+        nav > img{
+            width: 200px;
+        }
+      #place{
+        width: 80%;
+      
+        margin: auto;
+      }
+      input[type="text"]{
+        border: none;
+            border-bottom: 1px solid rgb(14, 1, 1);
+            outline: none;
+            height:15px;
+      }
+      nav > div{
+        display: flex;
+       
+      }
+     nav > div>div{
+        
+        display: flex;
+        width: 100%;
+          
+            justify-content: space-between;
+            font-size:15px;
+            
+     }
+     nav > div>div>div{
+        display: flex;
+        margin:end;
+        width: 200px;
+        justify-content: space-between;
+     }
+
+     #cart-container{
+    
+      display: flex;
+      gap: 10px;
+      padding: 0px 0px 0px 0px;
+      
+     }
+     #cart-container{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        gap: 10px;
+        
+      }
+      #total{
+        padding: 150px 0px 0px 0px;
+        text-align: center;
+        font-size: 20px;
+     }
+     
+     #place-order{
+      text-decoration: none;
+     
+      background-color: black;
+      color: aliceblue;
+      
+      margin: auto;
+      display: block;
+      width: 200px;
+      text-align: center;
+      align-items: flex-end;
+      
+      
+     }
+     
+  
+    </style>
+  </head>
+  <body>
+      
+<nav>
+  <div id="topnav">
+    <span  style="font-size:30px;cursor:pointer " onclick="openNav()">&#9776; </span>
+    <img src="https://1000logos.net/wp-content/uploads/2022/08/Zara-log%D0%BE-768x432.png" alt="">
+    
+  </div>
+
+<div>
+    <div>
+        <input id="in" type="text" placeholder="SEARCH ">
+       
+        <div id="help">
+           
+        </div>
+    </div>
+
+</div>
+</nav>
+    
+
+<h1 id="total">Your Total cart Price is:- <span id="cart-total">0</span></h1>
+  
+    <div id="cart-container">
+      <!-- Here Append All the cart Products  -->
+    </div>
+     
+    <p  ><a id="place-order" href="checkout .html">PLACE ORDER</a></p>
+  </body>
+  <script>
+    // Write all necessery JS here 
+    let total=document.getElementById("cart-total");
+    let container = document.getElementById("cart-container");
+
+    let cartData = JSON.parse(localStorage.getItem("cart"));
+    if(cartData === null){
+      cartData = [];
+    }
+
+    displayProducts(cartData);
+
+    function displayProducts(data) {
+      container.innerHTML = null;
+      data.forEach((element) => {
+        let card = document.createElement("div");
+          let image = document.createElement("img");
+          image.setAttribute("src",element.img);
+
+          
+
+          let title=document.createElement("h1")
+             title.innerText=element.title;
+          let price = document.createElement("h3");
+          price.innerText = element.price;
+            
+          total.innerText=element.price
+
+
+          
+
+          
+
+          let increment = document.createElement("button");
+          increment.innerText = "+";
+          let quantity = document.createElement("span");
+          quantity.innerText = element.quantity;
+          let decrement = document.createElement("button");
+          decrement.innerText = "-";
+        card.append(image,price,title,increment,quantity,decrement);
+        container.append(card);
+      });
+    }
+
+
+
+
+    
+
+  </script>
+</html>
