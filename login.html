@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+       
+        #container{
+           
+            display: flex;
+            
+            width: 80%;
+            margin: auto;
+           justify-content: space-between;
+        }
+        #container>div{
+            
+            
+            padding-right: 300px;
+            
+        }
+         input{
+           width: 100%;
+           margin-bottom: 20px;
+
+        }
+
+        input[type="text"],input[type="password"],input[type="confirm password"]
+        {
+            border: none;
+            border-bottom: 1px solid rgb(14, 1, 1);
+            outline: none;
+            height:15px;
+            
+        }
+        #btn{
+           width: 100%;
+           background-color: black;
+           color: rgb(253, 253, 253);
+        }
+        #zara_container{
+            display: flex;
+            
+        }
+       #one{
+        width: 25px;
+        text-align: center;
+       }
+       #two{
+        width: 200px;;
+       }
+
+       #search_conatainer{
+        display: flex;
+       gap: 100px;
+       }
+       #submit{
+        background-color: black;
+        color: aliceblue;
+       }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div id="container">
+            <div id="zara_container">
+                <i class='fas fa-angle-left'></i>
+                <img id="two"
+                 src="https://1000logos.net/wp-content/uploads/2022/08/Zara-log%D0%BE-768x432.png" alt="">
+            </div>
+            <div id="search_conatainer">
+               
+                 <p>Help</p>
+            </div>
+        </div>
+
+    </nav>
+   
+       
+    <div id="container">
+        <div id="login">
+            <h1>LOG IN</h1>
+            <input type="text" placeholder="EMAIL">
+            <input type="password" placeholder="PASSWORD">
+            <button id="btn">LOG IN</button>
+            <a href="#">FORGET YOUR PASSWORD</a>
+        
+           </div> 
+           
+           <div id="register">
+            <h1>PERSONAL DETAILS</h1>
+            <input type="text" placeholder="EMAIL" id="email">
+            <input type="password" placeholder="PASSWORD" id="pass">
+            
+            <input type="text" placeholder="NAME">
+            <input type="text" placeholder="LAST NAME">
+
+        
+            <input type="submit" placeholder="CREATE ACCOUNT" id="submit">
+           </div>
+    </div>
+  
+</body>
+<script>
+    let btnn=document.getElementById="btnn"
+    let login=document.getElementById="login";
+    let register=document.getElementById="register";
+    
+   
+
+   submit.addEventListener("submit",function(event){
+    event.preventDefault();
+
+    let formdata={
+        email:register.email.value,
+        password:pass.value,
+    };
+
+
+    let lsdata=JSON.parse(localStorage.getItem("create"));
+    if(lsdata==null)
+    {
+        lsdata=[];
+    }
+    lsdata.push(formdata);
+
+    localStorage.setItem("create",JSON.stringify(lsdata));
+});
+
+   
+
+</script>
+</html>
